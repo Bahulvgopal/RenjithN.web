@@ -128,6 +128,24 @@
     </svg></button>
 </div
   <script src="script.js"></script>
+  <script>
+    // Get the element to scale
+var wtsappElement = document.querySelector('.wtsapp');
+
+// Add event listener for touchstart event
+wtsappElement.addEventListener('touchstart', function() {
+  // Scale to 1.2 when touched
+  this.style.transform = 'scale(1.2)';
+});
+
+// Add event listener for touchend event
+wtsappElement.addEventListener('touchend', function() {
+  // Scale back to 1 when finger is lifted
+  this.style.transform = 'scale(1)';
+});
+
+
+  </script>
 </body>
 
 </html>
